@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2D Ping Pong</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header>
+        <h1>2D Ping Pong</h1>
+        <p>Player: <kbd>W</kbd>/<kbd>S</kbd> or drag. Computer tracks the ball.</p>
+      </header>
+
+      <section class="scoreboard" aria-live="polite">
+        <span>Player <strong id="playerScore">0</strong></span>
+        <button id="startButton" type="button">Start game</button>
+        <span><strong id="computerScore">0</strong> Computer</span>
+      </section>
+
+      <canvas id="game" width="900" height="520" aria-label="Ping pong game area"></canvas>
+
+      <footer>
+        First to 7 wins. Press <kbd>Space</kbd> to pause or resume.
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
